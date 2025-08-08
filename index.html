@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather and Currency</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Weather and Currency</h1>
+      <p>Assignment 2</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="services-section">
+      
+      <div class="arch-card-grid">
+        <div class="arch-card">
+          <div class="arch-image" style="background-image: url('mountainsnow.jpg');"></div>
+          <div class="arch-content">
+            <h3>Calgary Weather</h3>
+            <div id="weatherDisplay">Loading...</div>
+          </div>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-image" style="background-image: url('currency.jpg');"></div>
+          <div class="arch-content">
+            <h3>Currency Converter</h3>
+            <form id="currencyForm">
+              <input type="number" id="amount" placeholder="Amount" required />
+              <select id="fromCurrency"></select>
+              <select id="toCurrency"></select>
+              <button type="submit" class="btn-primary">Convert</button>
+            </form>
+            <div id="currencyResult"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

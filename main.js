@@ -3,7 +3,7 @@
 // refenced notes taken from class, also used the fetch/delete functions and modified them to suit the needs of this project.
 
 // weather api
-const weatherUrl = "http://api.weatherapi.com/v1/current.json?key=b27a3e75b672430cb43173008250508&q=Calgary";
+const weatherUrl = "https://api.weatherapi.com/v1/current.json?key=b27a3e75b672430cb43173008250508&q=Calgary";
 const WEATHER_KEY = "weatherData";
 const WEATHER_EXPIRY = 10 * 60 * 1000; // 10 minutes
 // This function fetches weather data and caches it in localStorage
@@ -154,5 +154,6 @@ function updateConversion(ratesData, amount, from, to, resultDiv) {
     <p><strong>${amount} ${from} = ${converted} ${to}</strong></p>
   `;
 }
+
 
 loadCurrency(); // Call on page load
